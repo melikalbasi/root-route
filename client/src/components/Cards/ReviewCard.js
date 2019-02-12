@@ -1,10 +1,16 @@
 import React from "react";
 import "./ResourceCard.css";
 
+const style = {
+    userName: {
+        fontWeight: '500'
+    }
+}
+
 function ReviewCard(props) {
     return (
         <div>
-            <p>Review #{props.review.id}: {props.review.reviewContent}</p>
+            <p>User <span style={style.userName}>{props.review.userName}</span>: {props.review.reviewContent}</p>
         </div>
     );
 }

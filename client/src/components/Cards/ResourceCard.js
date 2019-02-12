@@ -20,7 +20,8 @@ class ResourceCard extends Component {
         innerLink: this.props.innerLink,
         reviewsDisplayed: true,
         descriptionsDisplayed: true,
-        show: false
+        show: false,
+        user: this.props.user
     };
 
 
@@ -48,7 +49,7 @@ class ResourceCard extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        API.submitReview(this.state.id, this.state.reviewContent)
+        API.submitReview(this.state.id, this.state.user.name, this.state.reviewContent)
             .then(res => {
                 if (res.data.status === "error") {
                     throw new Error(res.data.message);
@@ -110,7 +111,8 @@ class ResourceCard extends Component {
                     {this.state.reviews.map(review => (
 
 
-                        <ReviewCard review={review} />
+                        <ReviewCard 
+                            review={review} />
                     ))}
                     <ReviewForm
                         handleFormSubmit={this.handleFormSubmit}
