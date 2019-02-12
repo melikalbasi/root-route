@@ -1,0 +1,56 @@
+.navbar{
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 100%;
+  display:flex;
+  font-family: ‘Nunito’, sans-serif;
+  padding:0;
+  /* margin-bottom: 20px; */
+  height: 80px
+
+}
+
+hr{
+  background-color: white;
+  width: 7rem;
+}
+
+a{
+  display:inline-block;
+  color:white;
+  /* font-size:1rem; */
+  text-decoration: none;
+  padding:20px;
+      
+}
+
+a:hover{
+  display:inline-block;
+  /* font-size:1rem; */
+  text-decoration: none;
+  padding:20px;
+  transition: .5s ease;
+      
+}
+
+a span{
+  position:relative;
+  transition: 0.5s
+}
+
+a span:after{
+
+  position:absolute;
+  opacity:0;
+  top:0;
+  /* font-size:1rem; */
+  transition: 0.5s;
+
+}
+
+a:hover span:after {
+  opacity:1;
+  
+}
+
