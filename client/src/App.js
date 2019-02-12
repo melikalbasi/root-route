@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Paths from "./pages/Paths";
-import NoMatch from "./pages/NoMatch";
 import Subject from "./pages/Subjects";
 import Resource from "./pages/Resource";
 import LandingPage from "./pages/LandingPage";
