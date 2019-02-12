@@ -1,23 +1,30 @@
-module.exports = function (sequelize, DataTypes) {
-  const Path = sequelize.define("Path", {
+module.exports = function(sequelize, DataTypes) {
+  var Path = sequelize.define("Path", {
     name: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       validate: {
-        len: [2, 50]
+        len: [1, 100]
       }
     },
     description: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       validate: {
-        len: [2, 200]
+        len: [1, 1000]
       }
     },
     image: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       validate: {
-        notNull: true
+        len: [1, 1000]
       }
     }
   });
-  return Path;
-}
+
+  Path.associate = function(models){
+    Path.hasMany(models.Subject, {
+      onDelete: "cascade"
+    });
+  }
+  
+  return Path; 
+};
