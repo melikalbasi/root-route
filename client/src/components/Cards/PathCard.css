@@ -1,0 +1,136 @@
+.PathCardOverlay {
+  position: absolute;
+  bottom: -20px;
+  /* left: 20px; */
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+  color:white;
+  transform: translateY(-20px);
+
+}
+
+.PathContainer:hover .PathCardOverlay {
+  height: 100%;
+  border: none;
+  color:white;
+}
+
+.PathCardLink {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: ‘Nunito’, sans-serif;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+
+}
+
+.PathCardLink:hover{
+  color:white;
+  background-color: (250,250,250,.7);
+  
+
+
+}
+
+.PathCardDesc{
+  padding: 20px;
+  font-size: 15px;
+  height: 275px;
+  width: 350px;
+  font-family: ‘Nunito’, sans-serif;
+  box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+  color:black;
+  font-weight:bold;
+  border: 1px solid rgba(0,0,0,.1);
+  
+}
+
+img {
+  background-color: white;
+  height: 200px;
+  width: 350px;
+
+}
+
+.PathContainer {
+  height: 200px;
+  width: 350px;
+  display: -webkit-inline-box;
+  margin-top :0px ;
+  text-align:center;
+  margin-bottom: 300px;
+  margin-left:50px;
+  position: relative;
+  align-items:center;
+} 
+
+.ReviewButton{
+color: black;
+font-size: 20px;
+/* top: 50%;
+left: 50%; */
+/* -webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%); */
+text-align: center;
+font-family: ‘Nunito’, sans-serif;
+border: 1px solid white;
+padding: 10px;
+background-color:transparent;
+
+}
+
+.ReviewArea{
+/* margin-top:0px; */
+padding: 20px;
+font-size: 15px;
+height: 275px;
+width: 300px;
+
+box-shadow: 10px 10px 175px rgba(116, 116, 116, 0.5);
+color:black;
+font-weight:bold;
+border: 1px solid rgba(0,0,0,.1);
+
+}
+
+.PathCardName {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+letter-spacing: 1px;
+font-size: 24px;
+}
+
+/* 
+a{
+color:white;
+border: 2px solid white;
+border-radius: 50px;
+top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+
+a:hover{
+/* border:none; */
+/* color:white;
+border: 2px solid white;
+border-radius: 50px;
+
+} */ 
