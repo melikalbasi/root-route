@@ -48,7 +48,6 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-
 // Checks if a user is logged in
 // const accessProtectionMiddleware = (req, res, next) => { 
 //   console.log("RES AUTHENTICATED ", req.isAuthenticated()) 
@@ -65,8 +64,6 @@ app.get('/logout', function(req, res) {
 app.get('/protected', (req, res) => {  
   res.json(user);
 });
-
-
 
 
 db.sequelize.sync({ force: false }).then(function() {
