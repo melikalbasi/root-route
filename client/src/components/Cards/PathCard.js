@@ -14,7 +14,6 @@ class PathCard extends Component {
         descriptionsDisplayed: true,
     }
 
-    
     // componentDidMount() {
     //     console.log(this.props.state.id);
     // }
@@ -55,6 +54,5 @@ render() {
 
     );
 }
-
 }
 export default PathCard;
